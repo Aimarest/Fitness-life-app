@@ -1,0 +1,183 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 1em;
+
+    @media all and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    @media all and (min-width:1300px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+.training {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+
+    &__card {
+        background-color: $background-card;
+        border: outset 1rem $border-card;
+        border-radius: 10px;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        @media all and (min-width:768px) {
+            padding: 1rem;
+
+        }
+
+        @media all and (min-width:1000px) {
+            padding: 1.4em;
+
+        }
+
+    }
+
+    &__title {
+        padding: 1rem;
+        color: $title-color;
+        text-shadow: 0 0 2px $background-card, 0 0 5px $shadow1,
+            0 0 4px $shadow2, 0 0 4px $shadow3,
+            0 0 15px $shadow4-subtitle, 0 0 20px $shadow5,
+            0 0 30px $shadow6;
+
+        @media all and (min-width:768px) {
+            font-size: 2em;
+            padding: 1.5em 0;
+        }
+
+        @media all and (min-width:1000px) {
+            font-size: 3em;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 1em;
+        color: $shadow4-subtitle;
+        text-transform: uppercase;
+        font-size: 1em;
+        text-shadow: 0 0 2px $shadow-subtitle1, 0 0 5px $shadow-subtitle2,
+            0 0 4px $shadow-subtitle3, 0 0 4px $shadow-subtitle4,
+            0 0 20px $shadow-subtitle5, 0 0 25px $shadow-subtitle6,
+            0 0 30px $shadow-subtitle7;
+
+        @media all and (min-width:768px) {
+            font-size: 1.2em;
+
+        }
+
+        @media all and (min-width:1000px) {
+            font-size: 1.5em;
+
+        }
+
+        @media all and (min-width:1400px) {
+            font-size: 1.8em;
+
+        }
+
+    }
+
+    &__description {
+        color: $background-page;
+        line-height: 1.5em;
+        font-size: 0.8em;
+
+        @media all and (min-width:374px) {
+            font-size: 1em;
+        }
+
+        @media all and (min-width:1000px) {
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+
+        @media all and (min-width:764px) {
+            width: 80%
+        }
+    }
+
+    &__fav {
+        margin: 1rem;
+        font-size: 1rem;
+        color: $color-fav;
+        text-shadow: 0 0 1px rgb(108, 7, 27), 0 0 3px rgb(179, 20, 81),
+            0 0 2px rgb(228, 17, 55), 0 0 2px rgb(127, 38, 66),
+            0 0 10px rgb(131, 30, 53), 0 0 15px rgb(127, 38, 62),
+            0 0 20px rgb(127, 38, 54);
+
+        @media all and (min-width:768px) {
+            font-size: 1rem;
+
+        }
+
+        @media all and (min-width:1000px) {
+            font-size: 1.5rem;
+
+        }
+
+        @media all and (min-width:2000px) {
+            font-size: 1.8rem;
+
+        }
+    }
+
+    &__makeFav {
+        margin-left: 1rem;
+        font-size: 0.8rem;
+
+        @media all and (min-width:768px) {
+            font-size: 1em;
+
+        }
+
+        @media all and (min-width:2000px) {
+            font-size: 1.8em;
+
+        }
+    }
+
+    &__difficulty {
+        font-weight: 500;
+        font-size: 1em;
+        color: $shadow6;
+
+        @media all and (min-width:400px) {
+            font-size: 1.2em;
+        }
+
+        @media all and (min-width:768px) {
+            font-size: 1.2em;
+
+        }
+
+        @media all and (min-width:1000px) {
+            font-size: 1.5em;
+
+        }
+
+        @media all and (min-width:1400px) {
+            font-size: 1.8em;
+
+        }
+
+    }
+}

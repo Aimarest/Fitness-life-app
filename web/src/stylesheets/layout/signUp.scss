@@ -1,0 +1,78 @@
+.SignUp {
+
+    height: 60%;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: $title-color;
+        text-shadow: 0 0 2px $background-card, 0 0 5px $shadow1,
+            0 0 4px $shadow2, 0 0 4px $shadow3,
+            0 0 15px $shadow4-subtitle, 0 0 20px $shadow5,
+            0 0 30px $shadow6;
+
+        @media all and (min-width:1400px) {
+            font-size: 5rem;
+            margin-bottom: 4rem;
+        }
+
+        @media all and (min-width:2000px) {
+            font-size: 8rem;
+            margin-bottom: 10rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__label {
+        font-size: 1.8rem;
+        color: $background-card;
+        margin: 1em 0;
+
+        @media all and (min-width:1400px) {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media all and (min-width:2000px) {
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__input {
+        padding: 0.2rem;
+        margin-bottom: 1rem;
+        border-radius: 5%;
+        box-shadow: 0 0 0.5px $shadow-subtitle1, 0 0 1px $shadow-subtitle2,
+            0 0 2px $shadow-subtitle3, 0 0 4px $shadow-subtitle4,
+            0 0 15px $shadow-subtitle5, 0 0 25px $shadow-subtitle6,
+            0 0 50px $shadow-subtitle7;
+
+        @media all and (min-width:400px) {
+            width: 20rem;
+        }
+
+        @media all and (min-width:1400px) {
+            width: 30rem;
+            padding: 0.5rem;
+        }
+
+        @media all and (min-width:2000px) {
+            width: 40rem;
+            padding: 1.5rem;
+
+        }
+    }
+}

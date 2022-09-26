@@ -1,0 +1,53 @@
+.begining{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem; 
+    height: 100vh;
+    @media all and (min-width:764px){
+       align-items: flex-start;
+       padding:4rem;
+      
+    }
+    &__title{
+        color: $beginning-title;
+        font-size: 2.4rem;
+        @media all and (min-width:764px){
+           font-size:4rem;
+         }
+         @media all and (min-width:1400px){
+            font-size:6rem;
+          }
+          @media all and (min-width:2000px){
+            font-size:8rem;
+          }
+    }
+    &__subtitle{
+        color:$color-fav;
+        font-size: 2rem;
+        margin:2rem 0 2rem 0;
+        @media all and (min-width:764px){
+            font-size:3rem;
+          }
+          @media all and (min-width:1400px){
+            font-size:5rem;
+          }
+          @media all and (min-width:2000px){
+            font-size:7rem;
+          }
+    }
+    &__text{
+        color:$shadow6;
+        font-size: 2rem;
+        @media all and (min-width:764px){
+            font-size:2.5rem;
+          }
+          @media all and (min-width:1400px){
+            font-size:4rem;
+          }
+          @media all and (min-width:2000px){
+            font-size:6rem;
+          }
+    }
+}

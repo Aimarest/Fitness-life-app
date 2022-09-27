@@ -41,7 +41,6 @@
 
         @media all and (min-width:1000px) {
             padding: 1.4em;
-
         }
 
     }
@@ -57,10 +56,6 @@
         @media all and (min-width:768px) {
             font-size: 2em;
             padding: 1.5em 0;
-        }
-
-        @media all and (min-width:1000px) {
-            font-size: 3em;
         }
     }
 
@@ -83,12 +78,6 @@
             font-size: 1.5em;
 
         }
-
-        @media all and (min-width:1400px) {
-            font-size: 1.8em;
-
-        }
-
     }
 
     &__description {
@@ -99,60 +88,30 @@
         @media all and (min-width:374px) {
             font-size: 1em;
         }
-
-        @media all and (min-width:1000px) {
-            font-size: 1.5em;
-            line-height: 1.5em;
-        }
     }
 
     &__img {
-        width: 100%;
+        width: calc(100% - 10%);
         height: auto;
 
         @media all and (min-width:764px) {
-            width: 80%
+            width: calc(100% - 40%);
         }
     }
 
     &__fav {
         margin: 1rem;
-        font-size: 1rem;
+        font-size: 1em;
         color: $color-fav;
         text-shadow: 0 0 1px rgb(108, 7, 27), 0 0 3px rgb(179, 20, 81),
             0 0 2px rgb(228, 17, 55), 0 0 2px rgb(127, 38, 66),
             0 0 10px rgb(131, 30, 53), 0 0 15px rgb(127, 38, 62),
             0 0 20px rgb(127, 38, 54);
-
-        @media all and (min-width:768px) {
-            font-size: 1rem;
-
-        }
-
-        @media all and (min-width:1000px) {
-            font-size: 1.5rem;
-
-        }
-
-        @media all and (min-width:2000px) {
-            font-size: 1.8rem;
-
-        }
     }
 
     &__makeFav {
         margin-left: 1rem;
-        font-size: 0.8rem;
-
-        @media all and (min-width:768px) {
-            font-size: 1em;
-
-        }
-
-        @media all and (min-width:2000px) {
-            font-size: 1.8em;
-
-        }
+        font-size: 0.8em;
     }
 
     &__difficulty {
@@ -168,16 +127,5 @@
             font-size: 1.2em;
 
         }
-
-        @media all and (min-width:1000px) {
-            font-size: 1.5em;
-
-        }
-
-        @media all and (min-width:1400px) {
-            font-size: 1.8em;
-
-        }
-
     }
 }

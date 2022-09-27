@@ -11,7 +11,7 @@ const MyKitchenRecipes = (props) => {
     });
   }, []);
   const renderFavouritesRecipes = () => {
-    return <ul>{renderFavs()}</ul>;
+    return <ul className="recipeCard__container">{renderFavs()}</ul>;
   };
   const handleFavourite = (recipeId) => {
     const userId = localStorage.getItem("userId");

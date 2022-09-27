@@ -1,4 +1,4 @@
-.myRecipes{
+.myRecipes {
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -6,25 +6,31 @@
     align-items: center;
     text-align: center;
     padding: 1em;
-    
 }
+
 .recipeCard {
-    padding: 1.5em 1em;
+    max-width: calc(100% - 5%);
+    padding: 1em 0.5em;
     width: fit-content;
-    margin-bottom: 1em ;
+    margin-bottom: 1em;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     border: outset 1rem $border-card;
+
     @media all and (min-width:768px) {
         font-size: 2em;
-      
     }
+
+    @media all and (min-width:1000px) {
+        max-width: calc(100% - 20%);
+    }
+
     &__title {
-        font-size: 1.5em;
-       padding: 1.5em 0;
+        font-size: 1.2em;
+        padding: 1.5em 0;
         text-align: center;
         color: $title-color;
         text-shadow: 0 0 2px $background-card, 0 0 5px $shadow1,
@@ -33,41 +39,49 @@
             0 0 30px $shadow6;
 
         @media all and (min-width:768px) {
-            font-size: 2.5em;
-           
-        }
+            font-size: 1.8em;
 
+        }
     }
 
     &__subtitle {
         color: $shadow4-subtitle;
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 0.8em;
         text-shadow: 0 0 2px $shadow-subtitle1, 0 0 5px $shadow-subtitle2,
             0 0 4px $shadow-subtitle3, 0 0 4px $shadow-subtitle4,
             0 0 20px $shadow-subtitle5, 0 0 25px $shadow-subtitle6,
             0 0 30px $shadow-subtitle7;
 
-        
+        @media all and (min-width:768px) {
+            font-size: 0.5em;
+        }
     }
-
     &__description {
-        text-align:center;
-        color:$shadow1;
-        line-height: 1.8rem;
+        padding: 0.2em;
+        text-align: center;
+        color: $shadow1;
+        line-height: 1.2em;
         font-size: 0.8em;
-        max-width: 30rem;
 
         @media all and (min-width:768px) {
-            line-height: 2.2rem;
-            max-width: 50rem;
+            font-size: 0.5em;
+            max-width: 700px;
         }
-    
-    }
 
+        @media all and (min-width:1600px) {
+            font-size: 0.5em;
+            max-width: 1000px;
+        }
+
+        @media all and (min-width:2000px) {
+            font-size: 0.6em;
+            max-width: 1500px;
+        }
+    }
     &__fav {
         margin: 1rem;
-        font-size: 1rem;
+        font-size: 1em;
         color: $color-fav;
         text-shadow: 0 0 1px rgb(108, 7, 27), 0 0 3px rgb(179, 20, 81),
             0 0 2px rgb(228, 17, 55), 0 0 2px rgb(127, 38, 66),
@@ -75,37 +89,28 @@
             0 0 20px rgb(127, 38, 54);
 
         @media all and (min-width:768px) {
-            font-size: 1rem;
-
+            font-size: 0.5em;
         }
-
-        @media all and (min-width:1000px) {
-            font-size: 1.5rem;
-
-        }
-
     }
 
     &__makeFav {
         margin-left: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.8em;
 
         @media all and (min-width:768px) {
-            font-size: 1rem;
-
+            font-size: 0.8em;
         }
-
-        @media all and (min-width:1000px) {
-            font-size: 1.5rem;
-
-        }
-
     }
 
     &__difficulty {
+        padding: 1em 0;
         font-weight: 500;
         font-size: 1em;
         color: $shadow6;
+
+        @media all and (min-width:768px) {
+            font-size: 0.5em;
+        }
     }
 
     &__container {

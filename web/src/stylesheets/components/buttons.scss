@@ -1,6 +1,6 @@
 .button {
         cursor: pointer;
-        margin-top: 4em;
+        margin: 4em 0;
         border-radius: 10px;
         border: solid 0.3rem $border-card;
         background-color: $background-page;
@@ -14,28 +14,13 @@
                 0 0 30px $shadow6;
 
         @media and and (min-width:700) {
-                font-size: 1.8rem;
-                width: 7rem;
+                font-size: 1.5em;
+                width: 6em;
         }
 
-        @media all and (min-width:1000px) {
-                font-size: 1.8rem;
-                width: 8rem;
-        }
-
-        @media all and (min-width:1400px) {
-                font-size: 2rem;
-                width: 10rem;
-                padding: 0.5rem;
-        }
-
-        @media all and (min-width:2000px) {
-                font-size: 3rem;
-                width: 20rem;
-
-        }
         &:hover {
-                background-color: $shadow-subtitle3;
+                background-color:$shadow4-subtitle;
+                color:$background-page;
         }
 
 }

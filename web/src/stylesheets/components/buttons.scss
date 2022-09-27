@@ -18,9 +18,13 @@
                 width: 6em;
         }
 
+        @media all and (min-width:1000px) {
+                width: 8em;
+        }
+
         &:hover {
-                background-color:$shadow4-subtitle;
-                color:$background-page;
+                background-color: $shadow4-subtitle;
+                color: $background-page;
         }
 
 }

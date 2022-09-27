@@ -50,7 +50,7 @@ const MyTrainingExercises = (props) => {
         );
       });
     } else {
-      return <p className="errorMessage"> There are not favourites</p>;
+      return <p className="errorMessage errorMessageTraining"> There are not favourites</p>;
     }
   };
   return (

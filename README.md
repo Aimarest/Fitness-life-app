@@ -27,4 +27,5 @@ Una vez loggeado puedes ver todo lo que hay en nuestra base de datos e ir guarda
 - GITHUB
 - NPM
 
-![Imagen de la web]()
+![Imagen de la web](https://github.com/Aimarest/Vida-fit/blob/main/web/src/images/image1.png)
+![Imagen de la web](https://github.com/Aimarest/Vida-fit/blob/main/web/src/images/image2.png)
